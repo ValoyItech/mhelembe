@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery – Mhelembe Funerals | WE ARE AMONGST BIG 5 IN THE CITY</title>
+
+    <!-- =====  SAME META BLOCK AS index.html  ===== -->
+    <meta name="title" content="Gallery – Mhelembe Funerals">
+    <meta name="description" content="View photos of our caskets, tombstones, hearse fleet, grave-yard services and more.">
+    <meta name="keywords" content="Mhelembe Funerals gallery, funeral pictures, caskets, tombstones, hearse, graveyard">
+    <meta name="author" content="Mhelembe Funerals">
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mhelembefunerals.co.za/gallery.html">
+    <meta property="og:title" content="Gallery – Mhelembe Funerals">
+    <meta property="og:description" content="Professional funeral services across Limpopo – see our work.">
+    <meta property="og:image" content="https://mhelembefunerals.co.za/images/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mhelembefunerals.co.za/gallery.html">
+    <meta property="twitter:title" content="Gallery – Mhelembe Funerals">
+    <meta property="twitter:description" content="A visual journey through our facilities and services.">
+    <meta property="twitter:image" content="https://mhelembefunerals.co.za/images/logo.png">
+
+    <!-- =====  SAME CDN ASSETS  ===== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- =====  SAME THEME COLOURS  ===== -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'funeral-beige': '#F5F5DC',
+                        'funeral-tan': '#D2B48C',
+                        'funeral-brown': '#8B4513',
+                        'funeral-light-brown': '#CD853F',
+                        'funeral-gray': '#808080'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* ----  GLOBAL IMAGE RULES  ---- */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ----  SIMPLE FADE-IN  ---- */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ----  GALLERY GRID  ---- */
+        .gallery-grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        @media (min-width: 640px) {
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (min-width: 768px) {
+            .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (min-width: 1024px) {
+            .gallery-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        /* ----  GALLERY ITEM  ---- */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: .5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,.15);
+            transition: transform .3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;   /* no crop, no zoom */
+            background: #f5f5f5;   /* grey letterbox for portrait pics */
+        }
+    </style>
+</head>
+
+<body class="bg-funeral-beige text-gray-800">
+
+<!-- =========================================================== -->
+<!--  HEADER  (100 % copied from index.html)                    -->
+<!-- =========================================================== -->
+<header class="bg-gray-900 text-white shadow-lg">
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="images/logo.png" alt="Mhelembe Funerals Logo" class="h-[55px] w-auto">
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-bold">Mhelembe Funerals</h1>
+                    <p class="text-funeral-tan italic">WE ARE AMONGST BIG 5 IN THE CITY</p>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-funeral-tan transition-colors"><i class="fas fa-home mr-2"></i>Home</a>
+                <a href="index.html#plans" class="hover:text-funeral-tan transition-colors"><i class="fas fa-clipboard-list mr-2"></i>Plans</a>
+                <a href="index.html#services" class="hover:text-funeral-tan transition-colors"><i class="fas fa-hands-helping mr-2"></i>Services</a>
+                <a href="index.html#tombstones" class="hover:text-funeral-tan transition-colors"><i class="fas fa-monument mr-2"></i>Tombstones</a>
+                <a href="index.html#branches" class="hover:text-funeral-tan transition-colors"><i class="fas fa-map-marker-alt mr-2"></i>Branches</a>
+                <a href="contact.html" class="hover:text-funeral-tan transition-colors"><i class="fas fa-phone mr-2"></i>Contact</a>
+                <a href="about.html" class="hover:text-funeral-tan transition-colors"><i class="fas fa-info-circle mr-2"></i>About</a>
+                <a href="#gallery" class="text-funeral-tan"><i class="fas fa-images mr-2"></i>Gallery</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-white hover:text-funeral-tan transition-colors">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- =========================================================== -->
+<!--  MOBILE SIDEBAR  (100 % copied from index.html)            -->
+<!-- =========================================================== -->
+<div id="mobileSidebar" class="fixed inset-0 z-50 hidden">
+    <div class="fixed inset-0 bg-black bg-opacity-50" onclick="closeMobileSidebar()"></div>
+    <div id="sidebarContent" class="fixed right-0 top-0 h-full w-80 bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-xl font-bold">Menu</h2>
+                <button onclick="closeMobileSidebar()" class="text-white hover:text-funeral-tan">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <nav class="space-y-4">
+                <a href="index.html" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-home mr-3 text-funeral-tan"></i><span>Home</span>
+                </a>
+                <a href="index.html#plans" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-clipboard-list mr-3 text-funeral-tan"></i><span>Funeral Plans</span>
+                </a>
+                <a href="index.html#services" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-hands-helping mr-3 text-funeral-tan"></i><span>Our Services</span>
+                </a>
+                <a href="index.html#tombstones" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-monument mr-3 text-funeral-tan"></i><span>Tombstones</span>
+                </a>
+                <a href="index.html#branches" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-map-marker-alt mr-3 text-funeral-tan"></i><span>Our Branches</span>
+                </a>
+                <a href="contact.html" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-phone mr-3 text-funeral-tan"></i><span>Contact Us</span>
+                </a>
+                <a href="about.html" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-info-circle mr-3 text-funeral-tan"></i><span>About Us</span>
+                </a>
+                <a href="#gallery" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg bg-gray-700">
+                    <i class="fas fa-images mr-3 text-funeral-tan"></i><span>Gallery</span>
+                </a>
+            </nav>
+            <div class="mt-8 pt-8 border-t border-gray-600">
+                <div class="space-y-3">
+                    <a href="tel:0835937570" class="flex items-center text-green-400 hover:text-green-300">
+                        <i class="fas fa-phone mr-3"></i><span>083 593 7570</span>
+                    </a>
+                    <a href="tel:0603452464" class="flex items-center text-red-400 hover:text-red-300">
+                        <i class="fas fa-exclamation-triangle mr-3"></i><span>Emergency: 060 345 2464</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================== -->
+<!--  HERO  (simple, consistent)                                -->
+<!-- =========================================================== -->
+<section class="py-20 bg-gradient-to-br from-funeral-beige to-funeral-tan">
+    <div class="container mx-auto px-4 text-center">
+        <div class="fade-in">
+            <h1 class="text-5xl md:text-6xl font-bold text-black mb-6">Our Gallery</h1>
+            <p class="text-xl text-funeral-brown max-w-3xl mx-auto">
+                A visual journey through our facilities, services, and the compassionate care we provide to families in their time of need.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================== -->
+<!--  GALLERY GRIDS  (images keep aspect-ratio, same width)      -->
+<!-- =========================================================== -->
+<section id="gallery" class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-7xl space-y-16">
+
+        <!-- Caskets -->
+        <div>
+            <h2 class="text-3xl font-bold text-funeral-brown mb-6 fade-in"><i class="fas fa-box mr-3"></i>Caskets</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in"><img src="images/gallery11.jpg" alt="Casket"></div>
+                <div class="gallery-item fade-in"><img src="images/gallery15.jpg" alt="Casket"></div>
+                <div class="gallery-item fade-in"><img src="images/gallery17.jpg" alt="Casket"></div>
+                <div class="gallery-item fade-in"><img src="images/gallery20.jpg" alt="Casket"></div>
+                <div class="gallery-item fade-in"><img src="images/gallery21.jpg" alt="Casket"></div>
+            </div>
+        </div>
+
+        <!-- Graveyard -->
+        <div>
+            <h2 class="text-3xl font-bold text-funeral-brown mb-6 fade-in"><i class="fas fa-tree mr-3"></i>Graveyard & Services</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in"><img src="images/gallery4.jpg" alt="Graveyard"></div>
+                <div class="gallery-item fade-in"><img src="images/gallery3.jpg" alt="Graveyard"></div>
+                <div class="gallery-item fade-in"><img src="images/gallery2.jpg" alt="Graveyard"></div>
+                <div class="gallery-item fade-in"><img src="images/gallery6.jpg" alt="Graveyard"></div>
+                <div class="gallery-item fade-in"><img src="images/gallery7.jpg" alt="Graveyard"></div>
+                <div class="gallery-item fade-in"><img src="images/gallery18.jpg" alt="Graveyard"></div>
+                <div class="gallery-item fade-in"><img src="images/gallery19.jpg" alt="Graveyard"></div>
+            </div>
+        </div>
+
+        <!-- Hearse -->
+        <div>
+            <h2 class="text-3xl font-bold text-funeral-brown mb-6 fade-in"><i class="fas fa-car mr-3"></i>Hearse Fleet</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in"><img src="images/gallery17.jpg" alt="Hearse"></div>
+                <div class="gallery-item fade-in"><img src="images/gallery20.jpg" alt="Hearse"></div>
+                <div class="gallery-item fade-in"><img src="images/gallery9.jpg" alt="Hearse"></div>
+                <div class="gallery-item fade-in"><img src="images/hero1.jpg" alt="Hearse"></div>
+                <div class="gallery-item fade-in"><img src="images/hero2.jpg" alt="Hearse"></div>
+            </div>
+        </div>
+
+        <!-- Tombstones -->
+        <div>
+            <h2 class="text-3xl font-bold text-funeral-brown mb-6 fade-in"><i class="fas fa-monument mr-3"></i>Tombstones</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in"><img src="images/gallery14.jpg" alt="Tombstone"></div>
+                <div class="gallery-item fade-in"><img src="images/tomb1.jpg" alt="Tombstone"></div>
+                <div class="gallery-item fade-in"><img src="images/tomb2.jpg" alt="Tombstone"></div>
+                <div class="gallery-item fade-in"><img src="images/tomb3.jpg" alt="Tombstone"></div>
+                <div class="gallery-item fade-in"><img src="images/tomb4.jpg" alt="Tombstone"></div>
+                <div class="gallery-item fade-in"><img src="images/tomb5.jpg" alt="Tombstone"></div>
+                <div class="gallery-item fade-in"><img src="images/tomb6.jpg" alt="Tombstone"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================================== -->
+<!--  FOOTER  (100 % copied from index.html)                    -->
+<!-- =========================================================== -->
+<footer class="bg-gray-900 text-white">
+    <div class="container mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="images/logo.png" alt="Mhelembe Funerals" class="h-16 md:h-20 w-auto">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Mhelembe Funerals</h3>
+                        <p class="text-funeral-tan italic">WE ARE AMONGST BIG 5 IN THE CITY</p>
+                    </div>
+                </div>
+                <p class="text-gray-300 text-sm mb-5">Serving families with dignity, respect, and compassion in their time of need. Professional funeral services across multiple locations.</p>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/p/Mhelembe-Funerals-100067654508546/" class="text-gray-400 hover:text-funeral-tan transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="https://www.tiktok.com/discover/mhelembe-funeral-services" class="text-gray-400 hover:text-funeral-tan transition"><i class="fab fa-tiktok text-xl"></i></a>
+                    <a href="https://wa.me/27767591149" class="text-gray-400 hover:text-funeral-tan transition"><i class="fab fa-whatsapp text-xl"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-funeral-tan">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>Home</a></li>
+                    <li><a href="index.html#plans" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>Funeral Plans</a></li>
+                    <li><a href="index.html#services" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>Our Services</a></li>
+                    <li><a href="index.html#tombstones" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>Tombstones</a></li>
+                    <li><a href="index.html#branches" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>Our Branches</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-funeral-tan">Contact Info</h4>
+                <ul class="space-y-3">
+                    <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-funeral-tan"></i><span class="text-gray-300">Main: <a href="tel:0835937570" class="hover:text-white">083 593 7570</a></span></li>
+                    <li class="flex items-center"><i class="fas fa-exclamation-triangle mr-3 text-red-400"></i><span class="text-gray-300">Emergency: <a href="tel:0603452464" class="hover:text-white">060 345 2464</a></span></li>
+                    <li class="flex items-center"><i class="fas fa-envelope mr-3 text-funeral-tan"></i><span class="text-gray-300"><a href="mailto:rvukeya@gmail.com" class="hover:text-white">rvukeya@gmail.com</a></span></li>
+                    <li class="flex items-center"><i class="fas fa-envelope mr-3 text-funeral-tan"></i><span class="text-gray-300"><a href="mailto:info@mhelembefunerals.co.za" class="hover:text-white">info@mhelembefunerals.co.za</a></span></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-funeral-tan">Office Hours</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li><i class="fas fa-clock mr-2 text-funeral-tan"></i>Mon – Fri: 8:00 AM – 5:00 PM</li>
+                    <li><i class="fas fa-clock mr-2 text-funeral-tan"></i>Saturday: 8:00 AM – 2:00 PM</li>
+                    <li><i class="fas fa-clock mr-2 text-funeral-tan"></i>Sunday: Emergency Only</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2024 Mhelembe Funerals. All rights reserved.</p>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- =========================================================== -->
+<!--  SAME JS AS index.html  (mobile drawer + scroll-anim)      -->
+<!-- =========================================================== -->
+<script>
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+    }
+    function handleScrollAnimations() {
+        document.querySelectorAll('.fade-in').forEach(el => {
+            if (isElementInViewport(el)) el.classList.add('visible');
+        });
+    }
+    function openMobileSidebar() {
+        const sb = document.getElementById('mobileSidebar');
+        const sbc = document.getElementById('sidebarContent');
+        sb.classList.remove('hidden');
+        setTimeout(() => sbc.classList.remove('translate-x-full'), 10);
+    }
+    function closeMobileSidebar() {
+        const sb = document.getElementById('mobileSidebar');
+        const sbc = document.getElementById('sidebarContent');
+        sbc.classList.add('translate-x-full');
+        setTimeout(() => sb.classList.add('hidden'), 300);
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+        handleScrollAnimations();
+        window.addEventListener('scroll', handleScrollAnimations);
+        document.getElementById('mobileMenuBtn').addEventListener('click', openMobileSidebar);
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function (e) {
+                e.preventDefault();
+                const tgt = document.querySelector(this.getAttribute('href'));
+                if (tgt) tgt.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    });
+</script>
+</body>
+</html>
