@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Primary Meta Tags -->
+<title>Mhelembe Funerals – Mintirho ya vula vula</title>
+<meta name="title" content="Mhelembe Funerals – Mintirho ya vula vula">
+<meta name="description" content="Compassionate and professional funeral services. Affordable plans, dignified tombstones, and complete funeral solutions tailored for every family.">
+<meta name="keywords" content="Mhelembe Funerals, Funeral Services, Funeral Plans, Tombstones, Burial Services, Giyani, Limpopo">
+<meta name="author" content="Mhelembe Funerals">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/logo.png">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mhelembefuneral.co.za/">
+<meta property="og:title" content="Mhelembe Funerals – Mintirho ya vula vula">
+<meta property="og:description" content="Professional funeral services with dignity, respect, and affordable plans.">
+<meta property="og:image" content="https://mhelembefuneral.co.za/images/logo.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://mhelembefuneral.co.za/">
+<meta property="twitter:title" content="Mhelembe Funerals – Mintirho ya vula vula">
+<meta property="twitter:description" content="Complete funeral solutions with dignity, compassion, and affordable plans.">
+<meta property="twitter:image" content="https://mhelembefuneral.co.za/images/logo.png">
+
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom theme colours -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'funeral-beige': '#F5F5DC',
+                        'funeral-tan': '#D2B48C',
+                        'funeral-brown': '#8B4513',
+                        'funeral-light-brown': '#CD853F',
+                        'funeral-gray': '#808080'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* ----------  GLOBAL OVERFLOW FIX  ---------- */
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100%;
+        }
+        img, video, iframe, embed, object {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* ----------  HERO SLIDER (unchanged logic)  ---------- */
+        .hero-slider {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+        @media (min-width: 1920px) {
+            .hero-slider { height: 1080px; }
+        }
+        @media (max-width: 768px) {
+            .hero-slider {
+                height: 100vh;
+                max-height: 1920px;
+                min-height: 0;
+            }
+        }
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            background-size: cover;
+            background-position: center;
+        }
+        .slide.active { opacity: 1; }
+        .slide-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(245,245,220,0.8) 0%, rgba(210,180,140,0.8) 100%);
+        }
+
+        /* ----------  ANIMATIONS  ---------- */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .slide-in-left.visible { opacity: 1; transform: translateX(0); }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .slide-in-right.visible { opacity: 1; transform: translateX(0); }
+
+        .scale-in {
+            opacity: 0;
+            transform: scale(.8);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .scale-in.visible { opacity: 1; transform: scale(1); }
+
+        /* ----------  HOVER ENHANCEMENTS  ---------- */
+        .plan-card, .tombstone-card {
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+        .plan-card:hover, .tombstone-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,.15);
+        }
+        .gallery-item {
+            transition: transform .3s ease;
+            cursor: pointer;
+        }
+        .gallery-item:hover { transform: scale(1.1); }
+    </style>
+</head>
+
+<body class="bg-funeral-beige text-gray-800">
+
+<!-- =========================================================== -->
+<!-- HEADER                                                      -->
+<!-- =========================================================== -->
+<header class="bg-gray-900 text-white shadow-lg">
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+            <!-- Logo + Title -->
+            <div class="flex items-center space-x-3">
+                <img src="images/logo.png" alt="Mhelembe Funerals Logo" class="h-[55px] w-auto">
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-bold">Mhelembe Funerals</h1>
+                    <p class="text-funeral-tan italic">Mintirho ya vula vula</p>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#plans" class="hover:text-funeral-tan transition-colors"><i class="fas fa-clipboard-list mr-2"></i>Plans</a>
+                <a href="#services" class="hover:text-funeral-tan transition-colors"><i class="fas fa-hands-helping mr-2"></i>Services</a>
+                <a href="#tombstones" class="hover:text-funeral-tan transition-colors"><i class="fas fa-monument mr-2"></i>Tombstones</a>
+                <a href="#branches" class="hover:text-funeral-tan transition-colors"><i class="fas fa-map-marker-alt mr-2"></i>Branches</a>
+                <a href="#contact" class="hover:text-funeral-tan transition-colors"><i class="fas fa-phone mr-2"></i>Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-white hover:text-funeral-tan transition-colors">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- =========================================================== -->
+<!-- MOBILE SIDEBAR                                              -->
+<!-- =========================================================== -->
+<div id="mobileSidebar" class="fixed inset-0 z-50 hidden">
+    <div class="fixed inset-0 bg-black bg-opacity-50" onclick="closeMobileSidebar()"></div>
+    <div id="sidebarContent" class="fixed right-0 top-0 h-full w-80 bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-xl font-bold">Menu</h2>
+                <button onclick="closeMobileSidebar()" class="text-white hover:text-funeral-tan">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <nav class="space-y-4">
+                <a href="#plans" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-clipboard-list mr-3 text-funeral-tan"></i><span>Funeral Plans</span>
+                </a>
+                <a href="#services" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-hands-helping mr-3 text-funeral-tan"></i><span>Our Services</span>
+                </a>
+                <a href="#tombstones" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-monument mr-3 text-funeral-tan"></i><span>Tombstones</span>
+                </a>
+                <a href="#gallery" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-images mr-3 text-funeral-tan"></i><span>Gallery</span>
+                </a>
+                <a href="#branches" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-map-marker-alt mr-3 text-funeral-tan"></i><span>Our Branches</span>
+                </a>
+                <a href="#contact" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-phone mr-3 text-funeral-tan"></i><span>Contact Us</span>
+                </a>
+            </nav>
+            <div class="mt-8 pt-8 border-t border-gray-600">
+                <div class="space-y-3">
+                    <a href="tel:0835937570" class="flex items-center text-green-400 hover:text-green-300">
+                        <i class="fas fa-phone mr-3"></i><span>083 593 7570</span>
+                    </a>
+                    <a href="tel:0603452464" class="flex items-center text-red-400 hover:text-red-300">
+                        <i class="fas fa-exclamation-triangle mr-3"></i><span>Emergency: 060 345 2464</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================== -->
+<!-- HERO SLIDER                                                 -->
+<!-- =========================================================== -->
+<section class="hero-slider">
+    <!-- Slide 1 -->
+    <div class="slide active md:bg-[url('images/hero1.jpg')] bg-[url('images/herom1.jpg')]">
+        <div class="slide-overlay"></div>
+        <div class="relative z-10 container mx-auto px-4 h-full flex items-center justify-center text-center">
+            <div class="fade-in">
+                <h2 class="text-4xl md:text-6xl font-bold text-black mb-6">Compassionate Care in Your Time of Need</h2>
+                <p class="text-xl md:text-2xl text-funeral-brown mb-8 max-w-3xl mx-auto">Professional funeral services with dignity, respect, and comprehensive coverage for your family</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#plans" class="bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-funeral-brown transition-colors">
+                        <i class="fas fa-clipboard-list mr-2"></i>View Our Plans
+                    </a>
+                    <a href="tel:0835937570" class="bg-funeral-brown text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-funeral-light-brown transition-colors">
+                        <i class="fas fa-phone mr-2"></i>Call Now: 083 593 7570
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="slide md:bg-[url('images/hero2.jpg')] bg-[url('images/herom2.jpg')]">
+        <div class="slide-overlay"></div>
+        <div class="relative z-10 container mx-auto px-4 h-full flex items-center justify-center text-center">
+            <div class="fade-in">
+                <h2 class="text-4xl md:text-6xl font-bold text-black mb-6">Honoring Lives with Dignity</h2>
+                <p class="text-xl md:text-2xl text-funeral-brown mb-8 max-w-3xl mx-auto">Mintirho ya vula vula - We are here for you in your time of need</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#tombstones" class="bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-funeral-brown transition-colors">
+                        <i class="fas fa-monument mr-2"></i>View Tombstones
+                    </a>
+                    <a href="tel:0603452464" class="bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-red-700 transition-colors">
+                        <i class="fas fa-exclamation-triangle mr-2"></i>Emergency: 060 345 2464
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="slide md:bg-[url('images/hero3.jpg')] bg-[url('images/herom3.jpg')]">
+        <div class="slide-overlay"></div>
+        <div class="relative z-10 container mx-auto px-4 h-full flex items-center justify-center text-center">
+            <div class="fade-in">
+                <h2 class="text-4xl md:text-6xl font-bold text-black mb-6">Complete Funeral Solutions</h2>
+                <p class="text-xl md:text-2xl text-funeral-brown mb-8 max-w-3xl mx-auto">From planning to final arrangements, we handle everything with care</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#services" class="bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-funeral-brown transition-colors">
+                        <i class="fas fa-hands-helping mr-2"></i>Our Services
+                    </a>
+                    <a href="#branches" class="bg-funeral-brown text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-funeral-light-brown transition-colors">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Find Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 4 -->
+    <div class="slide md:bg-[url('images/hero4.jpg')] bg-[url('images/herom4.jpg')]">
+        <div class="slide-overlay"></div>
+        <div class="relative z-10 container mx-auto px-4 h-full flex items-center justify-center text-center">
+            <div class="fade-in">
+                <h2 class="text-4xl md:text-6xl font-bold text-black mb-6">Affordable Plans for Every Family</h2>
+                <p class="text-xl md:text-2xl text-funeral-brown mb-8 max-w-3xl mx-auto">Starting from R200/month - Comprehensive coverage when you need it most</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#plans" class="bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-funeral-brown transition-colors">
+                        <i class="fas fa-calculator mr-2"></i>Compare Plans
+                    </a>
+                    <a href="#contact" class="bg-funeral-brown text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-funeral-light-brown transition-colors">
+                        <i class="fas fa-envelope mr-2"></i>Get Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider nav -->
+    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
+        <button onclick="currentSlide(1)" class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"></button>
+        <button onclick="currentSlide(2)" class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"></button>
+        <button onclick="currentSlide(3)" class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"></button>
+        <button onclick="currentSlide(4)" class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"></button>
+    </div>
+
+    <button onclick="plusSlides(-1)" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all z-20">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button onclick="plusSlides(1)" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all z-20">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+</section>
+
+<!-- =========================================================== -->
+<!-- EMERGENCY BANNER                                            -->
+<!-- =========================================================== -->
+<section class="bg-gray-700 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+        <p class="text-lg font-semibold"><i class="fas fa-exclamation-triangle mr-2 text-red-400"></i>24/7 Emergency Service: <a href="tel:0603452464" class="underline hover:text-red-200"><i class="fas fa-phone mr-1"></i>060 345 2464</a></p>
+    </div>
+</section>
+
+<!-- =========================================================== -->
+<!-- PLANS SECTION                                               -->
+<!-- =========================================================== -->
+<section id="plans" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12 fade-in">
+      <i class="fas fa-clipboard-list mr-3"></i>Our Funeral Plans
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Plan 1 -->
+      <div class="plan-card bg-funeral-beige border-2 border-funeral-tan rounded-lg p-6 text-center scale-in flex flex-col h-full">
+        <div class="bg-funeral-brown text-white py-2 px-4 rounded-full inline-block mb-4">
+          <span class="font-bold text-lg"><i class="fas fa-star mr-2"></i>PLAN 1</span>
+        </div>
+        <h3 class="text-3xl font-bold text-black mb-2">R200/month</h3>
+        <p class="text-funeral-brown mb-4">
+          <i class="fas fa-money-bill-wave mr-2"></i>Claim: R2,000
+        </p>
+        <div class="text-left space-y-2 mb-6 flex-grow">
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Covers 16 people (member + 15 dependents)</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>15 free caskets & tombstones</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Food & groceries included</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Hearse, cars, tents, chairs & programs</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>6 months waiting period on tombstones</p>
+        </div>
+        <button onclick="showPlanDetails(1)" class="w-full bg-funeral-brown text-white py-3 rounded-lg hover:bg-funeral-light-brown transition-colors font-semibold mt-auto">
+          <i class="fas fa-eye mr-2"></i>View Details
+        </button>
+      </div>
+
+      <!-- Plan 2 -->
+      <div class="plan-card bg-funeral-beige border-2 border-funeral-brown rounded-lg p-6 text-center scale-in flex flex-col h-full">
+        <div class="bg-funeral-brown text-white py-2 px-4 rounded-full inline-block mb-4">
+          <span class="font-bold text-lg"><i class="fas fa-star mr-2"></i>PLAN 2</span>
+        </div>
+        <h3 class="text-3xl font-bold text-black mb-2">R240/month</h3>
+        <p class="text-funeral-brown mb-4">
+          <i class="fas fa-money-bill-wave mr-2"></i>Claim: R2,400
+        </p>
+        <div class="text-left space-y-2 mb-6 flex-grow">
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Covers 15 people (member + 14 dependents)</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>13 free caskets & tombstones</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Food & groceries included</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Hearse, cars, tents, chairs & programs</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>+ 1 mobile toilet</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>6 months waiting period on tombstones</p>
+        </div>
+        <button onclick="showPlanDetails(2)" class="w-full bg-funeral-brown text-white py-3 rounded-lg hover:bg-funeral-light-brown transition-colors font-semibold mt-auto">
+          <i class="fas fa-eye mr-2"></i>View Details
+        </button>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="plan-card bg-funeral-beige border-2 border-funeral-tan rounded-lg p-6 text-center scale-in flex flex-col h-full">
+        <div class="bg-funeral-brown text-white py-2 px-4 rounded-full inline-block mb-4">
+          <span class="font-bold text-lg"><i class="fas fa-crown mr-2"></i>PLAN 3</span>
+        </div>
+        <h3 class="text-3xl font-bold text-black mb-2">R300/month</h3>
+        <p class="text-funeral-brown mb-4">
+          <i class="fas fa-money-bill-wave mr-2"></i>Claim: R3,000
+        </p>
+        <div class="text-left space-y-2 mb-6 flex-grow">
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Covers 11 people (member + 10 dependents)</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>10 free caskets & tombstones</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Food & groceries included</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Hearse, cars, tents, chairs & programs</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>+ 1 mobile toilet & fridge</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Cow head or R320</p>
+          <p class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>6 months waiting period on tombstones</p>
+        </div>
+        <button onclick="showPlanDetails(3)" class="w-full bg-funeral-brown text-white py-3 rounded-lg hover:bg-funeral-light-brown transition-colors font-semibold mt-auto">
+          <i class="fas fa-eye mr-2"></i>View Details
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================================================== -->
+<!-- PLAN MODAL                                                  -->
+<!-- =========================================================== -->
+<div id="planModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-lg max-w-2xl w-full max-h-96 overflow-y-auto">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h3 id="modalTitle" class="text-2xl font-bold text-black"></h3>
+                <button onclick="closePlanModal()" class="text-funeral-gray hover:text-black text-2xl">&times;</button>
+            </div>
+            <div id="modalContent" class="space-y-4"></div>
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================== -->
+<!-- COMBINED BENEFITS & SERVICES                                -->
+<!-- =========================================================== -->
+<section id="services" class="py-16 bg-funeral-tan overflow-x-hidden">
+    <div class="container mx-auto px-4 max-w-6xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12 fade-in visible">
+            <i class="fas fa-gift mr-3"></i>What Every Policy Includes
+        </h2>
+
+        <!-- Top grid: Food + Extras -->
+        <div class="grid md:grid-cols-2 gap-6 mb-12">
+            <div class="bg-white rounded-xl p-6 shadow-lg slide-in-left visible">
+                <h3 class="text-xl font-bold text-funeral-brown mb-4">
+                    <i class="fas fa-utensils mr-2"></i>Food & Provisions
+                </h3>
+                <ul class="space-y-2 text-funeral-gray text-sm md:text-base">
+                    <li><i class="fas fa-check text-green-600 mr-2"></i>80 kg maize meal</li>
+                    <li><i class="fas fa-check text-green-600 mr-2"></i>10 live chickens</li>
+                    <li><i class="fas fa-check text-green-600 mr-2"></i>2 L cooking oil</li>
+                    <li><i class="fas fa-check text-green-600 mr-2"></i>10 white + 10 brown loaves</li>
+                    <li><i class="fas fa-check text-green-600 mr-2"></i>Juice & 10 kg sugar</li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-lg slide-in-right visible">
+                <h3 class="text-xl font-bold text-funeral-brown mb-4">
+                    <i class="fas fa-mobile-alt mr-2"></i>Extra Benefits
+                </h3>
+                <ul class="space-y-2 text-funeral-gray text-sm md:text-base">
+                    <li><i class="fas fa-check text-green-600 mr-2"></i>R100 airtime</li>
+                    <li><i class="fas fa-check text-green-600 mr-2"></i>R100 electricity</li>
+                    <li><i class="fas fa-check text-green-600 mr-2"></i>OR R2 000 cash alternative</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom grid: Service icons -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div class="text-center p-4 bg-white rounded-xl shadow scale-in">
+                <div class="text-3xl mb-2"><i class="fas fa-car text-funeral-brown"></i></div>
+                <h4 class="font-semibold text-funeral-brown text-sm">Hearse & Family Cars</h4>
+            </div>
+            <div class="text-center p-4 bg-white rounded-xl shadow scale-in">
+                <div class="text-3xl mb-2"><i class="fas fa-home text-funeral-brown"></i></div>
+                <h4 class="font-semibold text-funeral-brown text-sm">Tents (yard + grave)</h4>
+            </div>
+            <div class="text-center p-4 bg-white rounded-xl shadow scale-in">
+                <div class="text-3xl mb-2"><i class="fas fa-chair text-funeral-brown"></i></div>
+                <h4 class="font-semibold text-funeral-brown text-sm">100 Chairs</h4>
+            </div>
+            <div class="text-center p-4 bg-white rounded-xl shadow scale-in">
+                <div class="text-3xl mb-2"><i class="fas fa-file-alt text-funeral-brown"></i></div>
+                <h4 class="font-semibold text-funeral-brown text-sm">100 Programs</h4>
+            </div>
+            <div class="text-center p-4 bg-white rounded-xl shadow scale-in">
+                <div class="text-3xl mb-2"><i class="fas fa-box text-funeral-brown"></i></div>
+                <h4 class="font-semibold text-funeral-brown text-sm">Quality Caskets</h4>
+            </div>
+            <div class="text-center p-4 bg-white rounded-xl shadow scale-in">
+                <div class="text-3xl mb-2"><i class="fas fa-monument text-funeral-brown"></i></div>
+                <h4 class="font-semibold text-funeral-brown text-sm">Memorial Stones</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================================================== -->
+<!-- TOMBSTONES                                                  -->
+<!-- =========================================================== -->
+<section id="tombstones" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-black mb-4 fade-in">
+      <i class="fas fa-monument mr-3"></i>Premium Tombstones
+    </h2>
+    <p class="text-center text-funeral-brown mb-12 fade-in">
+      Beautiful memorial stones to honor your loved ones
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+      <!-- MM1 -->
+      <div class="tombstone-card bg-funeral-beige rounded-lg overflow-hidden shadow-lg scale-in">
+        <img src="images/tomb1.jpg" alt="Classic Granite Tombstone" class="w-full h-48 object-contain">
+        <div class="p-3">
+          <h3 class="text-lg font-bold text-funeral-brown mb-1"><i class="fas fa-gem mr-2"></i>MM1</h3>
+          <p class="text-funeral-gray mb-2 text-sm">Traditional black granite with gold lettering</p>
+          <p class="text-xl font-bold text-black mb-3"><i class="fas fa-tag mr-2"></i>R12,000</p>
+          <a href="https://wa.me/27767591149?text=Hello%2C%20I%20would%20like%20to%20order%20tombstone%20MM1%20(R12%2C000)" target="_blank"
+             class="block w-full bg-funeral-brown text-white py-2 rounded hover:bg-funeral-light-brown transition-colors text-sm text-center">
+            <i class="fas fa-shopping-cart mr-1"></i>Order Now
+          </a>
+        </div>
+      </div>
+
+      <!-- MM2 -->
+      <div class="tombstone-card bg-funeral-beige rounded-lg overflow-hidden shadow-lg scale-in">
+        <img src="images/tomb2.jpg" alt="Marble Memorial" class="w-full h-48 object-contain">
+        <div class="p-3">
+          <h3 class="text-lg font-bold text-funeral-brown mb-1"><i class="fas fa-heart mr-2"></i>MM2</h3>
+          <p class="text-funeral-gray mb-2 text-sm">Elegant white marble with engraved details</p>
+          <p class="text-xl font-bold text-black mb-3"><i class="fas fa-tag mr-2"></i>R10,000</p>
+          <a href="https://wa.me/27767591149?text=Hello%2C%20I%20would%20like%20to%20order%20tombstone%20MM2%20(R10%2C000)" target="_blank"
+             class="block w-full bg-funeral-brown text-white py-2 rounded hover:bg-funeral-light-brown transition-colors text-sm text-center">
+            <i class="fas fa-shopping-cart mr-1"></i>Order Now
+          </a>
+        </div>
+      </div>
+
+      <!-- MM3 -->
+      <div class="tombstone-card bg-funeral-beige rounded-lg overflow-hidden shadow-lg scale-in">
+        <img src="images/tomb3.jpg" alt="Custom Design" class="w-full h-48 object-contain">
+        <div class="p-3">
+          <h3 class="text-lg font-bold text-funeral-brown mb-1"><i class="fas fa-palette mr-2"></i>MM3</h3>
+          <p class="text-funeral-gray mb-2 text-sm">Personalized design with photo engraving</p>
+          <p class="text-xl font-bold text-black mb-3"><i class="fas fa-tag mr-2"></i>R9,000</p>
+          <a href="https://wa.me/27767591149?text=Hello%2C%20I%20would%20like%20to%20order%20tombstone%20MM3%20(R9%2C000)" target="_blank"
+             class="block w-full bg-funeral-brown text-white py-2 rounded hover:bg-funeral-light-brown transition-colors text-sm text-center">
+            <i class="fas fa-shopping-cart mr-1"></i>Order Now
+          </a>
+        </div>
+      </div>
+
+      <!-- MM4 -->
+      <div class="tombstone-card bg-funeral-beige rounded-lg overflow-hidden shadow-lg scale-in">
+        <img src="images/tomb4.jpg" alt="Bronze Memorial" class="w-full h-48 object-contain">
+        <div class="p-3">
+          <h3 class="text-lg font-bold text-funeral-brown mb-1"><i class="fas fa-medal mr-2"></i>MM4</h3>
+          <p class="text-funeral-gray mb-2 text-sm">Durable bronze plaque on granite base</p>
+          <p class="text-xl font-bold text-black mb-3"><i class="fas fa-tag mr-2"></i>R12,500</p>
+          <a href="https://wa.me/27767591149?text=Hello%2C%20I%20would%20like%20to%20order%20tombstone%20MM4%20(R12%2C500)" target="_blank"
+             class="block w-full bg-funeral-brown text-white py-2 rounded hover:bg-funeral-light-brown transition-colors text-sm text-center">
+            <i class="fas fa-shopping-cart mr-1"></i>Order Now
+          </a>
+        </div>
+      </div>
+
+      <!-- MM5 -->
+      <div class="tombstone-card bg-funeral-beige rounded-lg overflow-hidden shadow-lg scale-in">
+        <img src="images/tomb5.jpg" alt="Simple Stone" class="w-full h-48 object-contain">
+        <div class="p-3">
+          <h3 class="text-lg font-bold text-funeral-brown mb-1"><i class="fas fa-circle mr-2"></i>MM5</h3>
+          <p class="text-funeral-gray mb-2 text-sm">Affordable grey granite with basic engraving</p>
+          <p class="text-xl font-bold text-black mb-3"><i class="fas fa-tag mr-2"></i>R8,400</p>
+          <a href="https://wa.me/27767591149?text=Hello%2C%20I%20would%20like%20to%20order%20tombstone%20MM5%20(R8%2C400)" target="_blank"
+             class="block w-full bg-funeral-brown text-white py-2 rounded hover:bg-funeral-light-brown transition-colors text-sm text-center">
+            <i class="fas fa-shopping-cart mr-1"></i>Order Now
+          </a>
+        </div>
+      </div>
+
+      <!-- MM6 -->
+      <div class="tombstone-card bg-funeral-beige rounded-lg overflow-hidden shadow-lg scale-in">
+        <img src="images/tomb6.jpg" alt="Premium Memorial" class="w-full h-48 object-contain">
+        <div class="p-3">
+          <h3 class="text-lg font-bold text-funeral-brown mb-1"><i class="fas fa-crown mr-2"></i>MM6</h3>
+          <p class="text-funeral-gray mb-2 text-sm">Luxury design with LED lighting feature</p>
+          <p class="text-xl font-bold text-black mb-3"><i class="fas fa-tag mr-2"></i>R14,800</p>
+          <a href="https://wa.me/27767591149?text=Hello%2C%20I%20would%20like%20to%20order%20tombstone%20MM6%20(R14%2C800)" target="_blank"
+             class="block w-full bg-funeral-brown text-white py-2 rounded hover:bg-funeral-light-brown transition-colors text-sm text-center">
+            <i class="fas fa-shopping-cart mr-1"></i>Order Now
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================================================== -->
+<!-- GALLERY                                                     -->
+<!-- =========================================================== -->
+<section id="gallery" class="py-16 bg-gray-300">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-4 fade-in"><i class="fas fa-images mr-3"></i>Our Work Gallery</h2>
+        <p class="text-center text-gray-600 mb-12 fade-in">See our professional funeral services and beautiful memorials</p>
+        <div class="grid md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+            <!-- 8 gallery items -->
+            <div class="gallery-item scale-in">
+                <img src="images/gallery1.jpg" alt="Funeral Service" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+            </div>
+            <div class="gallery-item scale-in">
+                <img src="images/gallery2.jpg" alt="Memorial Service" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+            </div>
+            <div class="gallery-item scale-in">
+                <img src="images/gallery4.jpg" alt="Tombstone Installation" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+            </div>
+            <div class="gallery-item scale-in">
+                <img src="images/gallery3.jpg" alt="Funeral Arrangement" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+            </div>
+            <div class="gallery-item scale-in">
+                <img src="images/gallery5.jpg" alt="Casket Display" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+            </div>
+            <div class="gallery-item scale-in">
+                <img src="images/gallery6.jpg" alt="Memorial Garden" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+            </div>
+            <div class="gallery-item scale-in">
+                <img src="images/gallery7.jpg" alt="Venue Setup" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+            </div>
+            <div class="gallery-item scale-in">
+                <img src="images/gallery8.jpg" alt="Family Support" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================== -->
+<!-- BRANCHES                                                    -->
+<!-- =========================================================== -->
+<section id="branches" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12 fade-in"><i class="fas fa-map-marker-alt mr-3"></i>Our Branches</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div class="bg-white rounded-lg p-6 shadow-lg scale-in">
+                <div class="text-center mb-4"><i class="fas fa-building text-3xl text-funeral-brown"></i></div>
+                <h3 class="text-xl font-bold text-funeral-brown mb-3 text-center">HEAD OFFICE</h3>
+                <p class="text-funeral-gray mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Office No. 12 Maluleke Complex</p>
+                <p class="text-funeral-gray"><i class="fas fa-location-arrow mr-2"></i>Giyani opposite community hall</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-lg scale-in">
+                <div class="text-center mb-4"><i class="fas fa-store text-3xl text-funeral-brown"></i></div>
+                <h3 class="text-xl font-bold text-funeral-brown mb-3 text-center">TZANEEN OFFICE</h3>
+                <p class="text-funeral-gray mb-2"><i class="fas fa-map-marker-alt mr-2"></i>CRS Mall</p>
+                <p class="text-funeral-gray"><i class="fas fa-location-arrow mr-2"></i>Office No. B5 Old Checkers</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-lg scale-in">
+                <div class="text-center mb-4"><i class="fas fa-building text-3xl text-funeral-brown"></i></div>
+                <h3 class="text-xl font-bold text-funeral-brown mb-3 text-center">LENYENYE OFFICE</h3>
+                <p class="text-funeral-gray mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Industrial Street</p>
+                <p class="text-funeral-gray"><i class="fas fa-location-arrow mr-2"></i>Next to Lebowa Funerals</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-lg scale-in">
+                <div class="text-center mb-4"><i class="fas fa-store text-3xl text-funeral-brown"></i></div>
+                <h3 class="text-xl font-bold text-funeral-brown mb-3 text-center">PHALABORWA OFFICE</h3>
+                <p class="text-funeral-gray mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Lulekani</p>
+                <p class="text-funeral-gray"><i class="fas fa-location-arrow mr-2"></i>Matsandze Complex</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+  <div class="container mx-auto px-4 max-w-5xl">
+
+    <!-- heading -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-4 tracking-tight">
+      <i class="fas fa-comments text-funeral-tan mr-3"></i>Let’s Talk on WhatsApp
+    </h2>
+    <p class="text-center text-gray-300 mb-12">Tap the button below or fill in the quick form—your message lands straight in our WhatsApp.</p>
+
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+
+      <div>
+  <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 shadow-2xl">
+    <div class="flex items-center mb-4">
+      <i class="fab fa-whatsapp text-green-400 text-4xl mr-4"></i>
+      <div>
+        <h3 class="text-2xl font-bold">Chat Instantly</h3>
+        <p class="text-gray-300 text-sm">Save our number or start a chat now</p>
+      </div>
+    </div>
+    <a href="https://wa.me/27767591149?text=Hi%20Mhelembe%20Funerals%2C%20I%20need%20assistance%20with%20a%20funeral%20plan."
+       class="inline-flex items-center justify-center w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-all">
+      <i class="fab fa-whatsapp mr-2"></i>Open WhatsApp
+    </a>
+    <div class="mt-4 text-center text-gray-400 text-sm">
+      Or save <span class="font-mono text-funeral-tan">+27 76 759 1149</span>
+    </div>
+
+    <!-- small contact list now INSIDE same border -->
+    <div class="mt-6 space-y-3 text-sm border-t border-white/10 pt-6">
+      <div class="flex items-center text-gray-300">
+        <i class="fas fa-phone-alt text-funeral-tan mr-3"></i>
+        <span>083 593 7570  /  066 039 2393</span>
+      </div>
+      <div class="flex items-center text-gray-300">
+        <i class="fas fa-exclamation-triangle text-red-400 mr-3"></i>
+        <span>Emergency: 060 345 2464</span>
+      </div>
+      <div class="flex items-center text-gray-300">
+        <i class="fas fa-envelope text-funeral-tan mr-3"></i>
+        <span>rvukeya@gmail.com</span>
+      </div>
+      <div class="flex items-center text-gray-300">
+        <i class="fas fa-envelope text-funeral-tan mr-3"></i>
+        <span>rvukeya@gmail.com</span>
+      </div>
+      <div class="flex items-center text-gray-300">
+        <i class="fab fa-facebook text-blue-500 mr-3"></i>
+        <a href="https://www.facebook.com/p/Mhelembe-Funerals-100067654508546/" target="_blank" class="hover:underline">Facebook</a>
+      </div>
+      <div class="flex items-center text-gray-300">
+        <i class="fab fa-tiktok text-gray-200 mr-3"></i>
+        <a href="https://www.tiktok.com/discover/mhelembe-funeral-services" target="_blank" class="hover:underline">TikTok</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+      <!-- RIGHT: mini form → WhatsApp -->
+      <div>
+        <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 shadow-2xl">
+          <h3 class="text-xl font-bold mb-5"><i class="fas fa-edit text-funeral-tan mr-2"></i>Quick Inquiry Form</h3>
+          <form id="whatsappForm" class="space-y-4">
+            <input name="name" type="text" placeholder="Your Name" required
+                   class="w-full px-4 py-2 rounded-lg bg-white/10 text-white placeholder-gray-300 border border-white/20 focus:outline-none focus:ring-2 focus:ring-funeral-tan">
+            <input name="phone" type="tel" placeholder="Phone Number" required
+                   class="w-full px-4 py-2 rounded-lg bg-white/10 text-white placeholder-gray-300 border border-white/20 focus:outline-none focus:ring-2 focus:ring-funeral-tan">
+            <select name="plan" required
+                    class="w-full px-4 py-2 rounded-lg bg-white/10 text-white border border-white/20 focus:outline-none focus:ring-2 focus:ring-funeral-tan">
+              <option value="" disabled selected>Select a plan</option>
+              <option value="Plan 1 – R200">Plan 1 – R200</option>
+              <option value="Plan 2 – R240">Plan 2 – R240</option>
+              <option value="Plan 3 – R300">Plan 3 – R300</option>
+              <option value="Tombstone">Tombstone</option>
+            </select>
+            <textarea name="message" placeholder="Optional message…" rows="3"
+                      class="w-full px-4 py-2 rounded-lg bg-white/10 text-white placeholder-gray-300 border border-white/20 focus:outline-none focus:ring-2 focus:ring-funeral-tan"></textarea>
+            <button type="submit"
+                    class="w-full bg-funeral-brown hover:bg-funeral-light-brown text-white font-semibold py-3 rounded-lg transition-colors flex items-center justify-center">
+              <i class="fab fa-whatsapp mr-2"></i>Send via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  // send form straight to WhatsApp
+  document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const data = new FormData(this);
+    const name    = data.get('name');
+    const phone   = data.get('phone');
+    const plan    = data.get('plan');
+    const message = data.get('message');
+    const text =
+      `*New Inquiry*%0A` +
+      `*Name:* ${name}%0A` +
+      `*Phone:* ${phone}%0A` +
+      `*Plan:* ${plan}%0A` +
+      (message ? `*Message:* ${message}` : '');
+    window.open(`https://wa.me/27767591149?text=${text}`, '_blank');
+  });
+</script>
+
+<!-- =========================================================== -->
+<!-- FOOTER                                                      -->
+<!-- =========================================================== -->
+<footer class="bg-gray-900 text-white">
+    <div class="container mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-4 gap-8">
+            <!-- Company Info -->
+            <!-- ===========================================================
+     FOOTER – LOGO + HEADING + TAG-LINE (horizontal)
+=========================================================== -->
+<div class="md:col-span-1">
+  <!-- left: logo | right: texts -->
+  <div class="flex items-center gap-4 mb-4">
+    <img src="images/logo.png" alt="Mhelembe Funerals" class="h-16 md:h-20 w-auto">
+    <div>
+      <h3 class="text-2xl font-bold text-white">Mhelembe Funerals</h3>
+      <p class="text-funeral-tan italic">Mintirho ya vula vula</p>
+    </div>
+  </div>
+
+  <!-- blurb -->
+  <p class="text-gray-300 text-sm mb-5">Serving families with dignity, respect, and compassion in their time of need. Professional funeral services across multiple locations.</p>
+
+  <!-- socials -->
+  <div class="flex space-x-4">
+    <a href="https://www.facebook.com/p/Mhelembe-Funerals-100067654508546/" class="text-gray-400 hover:text-funeral-tan transition"><i class="fab fa-facebook-f text-xl"></i></a>
+    <a href="https://www.tiktok.com/discover/mhelembe-funeral-services" class="text-gray-400 hover:text-funeral-tan transition"><i class="fab fa-tiktok text-xl"></i></a>
+    <a href="#" class="text-gray-400 hover:text-funeral-tan transition"><i class="fab fa-instagram text-xl"></i></a>
+    <a href="https://wa.me/27767591149" class="text-gray-400 hover:text-funeral-tan transition"><i class="fab fa-whatsapp text-xl"></i></a>
+  </div>
+</div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-funeral-tan">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#plans" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>Funeral Plans</a></li>
+                    <li><a href="#services" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>Our Services</a></li>
+                    <li><a href="#tombstones" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>Tombstones</a></li>
+                    <li><a href="#gallery" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>Gallery</a></li>
+                    <li><a href="#branches" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>Our Branches</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-funeral-tan">Contact Info</h4>
+                <ul class="space-y-3">
+                    <li class="flex items-center">
+                        <i class="fas fa-phone mr-3 text-funeral-tan"></i>
+                        <div>
+                            <p class="text-gray-300">Main: <a href="tel:0835937570" class="hover:text-white">083 593 7570</a></p>
+                            <p class="text-gray-300">Alt: <a href="tel:0660392393" class="hover:text-white">066 039 2393</a></p>
+                        </div>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-exclamation-triangle mr-3 text-red-400"></i>
+                        <p class="text-gray-300">Emergency: <a href="tel:0603452464" class="hover:text-white">060 345 2464</a></p>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope mr-3 text-funeral-tan"></i>
+                        <div>
+                            <p class="text-gray-300"><a href="mailto:rvukeya@gmail.com" class="hover:text-white">rvukeya@gmail.com</a></p>
+                            <p class="text-gray-300"><a href="mailto:info@mhelembefuneral.co.za" class="hover:text-white">info@mhelembefuneral.co.za</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Office Hours & Location -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-funeral-tan">Office Hours</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li><i class="fas fa-clock mr-2 text-funeral-tan"></i>Mon - Fri: 8:00 AM - 5:00 PM</li>
+                    <li><i class="fas fa-clock mr-2 text-funeral-tan"></i>Saturday: 8:00 AM - 2:00 PM</li>
+                    <li><i class="fas fa-clock mr-2 text-funeral-tan"></i>Sunday: Emergency Only</li>
+                    <li class="mt-4">
+                        <i class="fas fa-map-marker-alt mr-2 text-funeral-tan"></i>
+                        <span class="text-sm">Head Office: Maluleke Complex, Giyani</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-700 mt-8 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    &copy; 2024 Mhelembe Funerals. All rights reserved. Serving families with dignity and compassion.
+                </p>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- =========================================================== -->
+<!-- JAVASCRIPT (unchanged logic)                               -->
+<!-- =========================================================== -->
+<script>
+    // Slider
+    let slideIndex = 1;
+    let slideInterval;
+
+    function showSlides(n) {
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.hero-slider button[onclick*="currentSlide"]');
+        if (n > slides.length) { slideIndex = 1; }
+        if (n < 1) { slideIndex = slides.length; }
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('opacity-100'));
+        dots.forEach(dot => dot.classList.add('opacity-50'));
+        if (slides[slideIndex - 1]) slides[slideIndex - 1].classList.add('active');
+        if (dots[slideIndex - 1]) {
+            dots[slideIndex - 1].classList.remove('opacity-50');
+            dots[slideIndex - 1].classList.add('opacity-100');
+        }
+    }
+    function plusSlides(n) {
+        clearInterval(slideInterval);
+        showSlides(slideIndex += n);
+        startAutoSlide();
+    }
+    function currentSlide(n) {
+        clearInterval(slideInterval);
+        showSlides(slideIndex = n);
+        startAutoSlide();
+    }
+    function startAutoSlide() {
+        slideInterval = setInterval(() => {
+            slideIndex++;
+            showSlides(slideIndex);
+        }, 5000);
+    }
+
+    // Scroll animations
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+    function handleScrollAnimations() {
+        const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
+        animatedElements.forEach(element => {
+            if (isElementInViewport(element)) element.classList.add('visible');
+        });
+    }
+
+    // Plan modal
+    function showPlanDetails(planNumber) {
+        const modal = document.getElementById('planModal');
+        const title = document.getElementById('modalTitle');
+        const content = document.getElementById('modalContent');
+        const planDetails = {
+  1: {
+    title: 'Plan 1 - R200/month',
+    content: `
+      <ul class="list-disc ml-6 space-y-2 text-gray-700">
+        <li>Covers 16 people (members + 15 dependents)</li>
+        <li>15 free caskets and tombstones</li>
+        <li>Claim: R2,000</li>
+        <li>Includes: 80kg maize meal, 10 live chickens, 2L cooking oil, 10 white + 10 brown loaves, juice, 10kg sugar</li>
+        <li>Plus: R100 airtime and R100 electricity OR R2,000 cash alternative</li>
+        <li>Hearse, family cars, 1 tent at home + 1 at grave, 100 chairs, 100 programs</li>
+        <li>6 months waiting period for tombstones</li>
+      </ul>
+    `
+  },
+  2: {
+    title: 'Plan 2 - R240/month',
+    content: `
+      <ul class="list-disc ml-6 space-y-2 text-gray-700">
+        <li>Covers 15 people (members + 14 dependents)</li>
+        <li>13 free caskets and tombstones</li>
+        <li>Claim: R2,400</li>
+        <li>Includes: 80kg maize meal, 10 live chickens, 2L cooking oil, 10 white + 10 brown loaves, juice, 10kg sugar</li>
+        <li>Plus: R100 airtime and R100 electricity OR R2,000 cash alternative</li>
+        <li>Hearse, family cars, 1 tent at home + 1 at grave, 100 chairs, 100 programs</li>
+        <li>1 mobile toilet provided</li>
+        <li>6 months waiting period for tombstones</li>
+      </ul>
+    `
+  },
+  3: {
+    title: 'Plan 3 - R300/month',
+    content: `
+      <ul class="list-disc ml-6 space-y-2 text-gray-700">
+        <li>Covers 11 people (members + 10 dependents)</li>
+        <li>10 free caskets and tombstones</li>
+        <li>Claim: R3,000</li>
+        <li>Includes: 80kg maize meal, 10 live chickens, 2L cooking oil, 10 white + 10 brown loaves, juice, 10kg sugar</li>
+        <li>Plus: R100 airtime and R100 electricity OR R2,000 cash alternative</li>
+        <li>Hearse, family cars, 1 tent at home + 1 at grave, 100 chairs, 100 programs</li>
+        <li>1 mobile toilet and 1 mobile fridge provided</li>
+        <li>Cow head (nhloko ya homu) or R320 to cook for builders</li>
+        <li>6 months waiting period for tombstones</li>
+      </ul>
+    `
+  }
+};
+
+        title.textContent = planDetails[planNumber].title;
+        content.innerHTML = planDetails[planNumber].content;
+        modal.classList.remove('hidden');
+    }
+    function closePlanModal() {
+        document.getElementById('planModal').classList.add('hidden');
+    }
+    function handleInquiry(event) {
+        event.preventDefault();
+        alert('Thank you for your inquiry! We will contact you shortly. For immediate assistance, please call 083 593 7570 or our emergency line 060 345 2464.');
+    }
+
+    // Mobile menu
+    function openMobileSidebar() {
+        const sidebar = document.getElementById('mobileSidebar');
+        const sidebarContent = document.getElementById('sidebarContent');
+        sidebar.classList.remove('hidden');
+        setTimeout(() => sidebarContent.classList.remove('translate-x-full'), 10);
+    }
+    function closeMobileSidebar() {
+        const sidebar = document.getElementById('mobileSidebar');
+        const sidebarContent = document.getElementById('sidebarContent');
+        sidebarContent.classList.add('translate-x-full');
+        setTimeout(() => sidebar.classList.add('hidden'), 300);
+    }
+
+    // Init
+    document.addEventListener('DOMContentLoaded', function() {
+        showSlides(slideIndex);
+        startAutoSlide();
+        handleScrollAnimations();
+        window.addEventListener('scroll', handleScrollAnimations);
+        document.getElementById('mobileMenuBtn').addEventListener('click', openMobileSidebar);
+        document.getElementById('planModal').addEventListener('click', function(e) {
+            if (e.target === this) closePlanModal();
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

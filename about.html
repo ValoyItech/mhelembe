@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us – Mhelembe Funerals | Mintirho ya vula vula</title>
+<meta name="title" content="About Us – Mhelembe Funerals">
+<meta name="description" content="Learn about Mhelembe Funerals, our history, values, and commitment to serving families with dignity, respect, and compassion.">
+<meta name="keywords" content="About Mhelembe Funerals, Funeral Services Limpopo, Funeral Plans, Compassionate Care">
+<meta name="author" content="Mhelembe Funerals">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/logo.png">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mhelembefuneral.co.za/about.html">
+<meta property="og:title" content="About Us – Mhelembe Funerals">
+<meta property="og:description" content="Discover our story and how we support families with professional funeral services.">
+<meta property="og:image" content="https://mhelembefuneral.co.za/images/logo.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://mhelembefuneral.co.za/about.html">
+<meta property="twitter:title" content="About Us – Mhelembe Funerals">
+<meta property="twitter:description" content="Serving families with compassion and dignity across Limpopo.">
+<meta property="twitter:image" content="https://mhelembefuneral.co.za/images/logo.png">
+
+
+    <!-- Tailwind + FontAwesome (same CDN as index.html) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Same custom colour theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'funeral-beige': '#F5F5DC',
+                        'funeral-tan': '#D2B48C',
+                        'funeral-brown': '#8B4513',
+                        'funeral-light-brown': '#CD853F',
+                        'funeral-gray': '#808080'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Re-use animation helpers from index.html -->
+    <style>
+        .fade-in {opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease;}
+        .fade-in.visible {opacity:1;transform:translateY(0);}
+        .scale-in {opacity:0;transform:scale(.8);transition:opacity .6s ease,transform .6s ease;}
+        .scale-in.visible {opacity:1;transform:scale(1);}
+        .gallery-item {transition:transform .3s ease;cursor:pointer;}
+        .gallery-item:hover {transform:scale(1.05);}
+    </style>
+</head>
+
+<body class="bg-funeral-beige text-gray-800">
+
+<!-- =========================================================== -->
+<!-- HEADER  (100 % identical to index.html)                   -->
+<!-- =========================================================== -->
+<header class="bg-gray-900 text-white shadow-lg">
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="images/logo.png" alt="Mhelembe Funerals Logo" class="h-[55px] w-auto">
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-bold">Mhelembe Funerals</h1>
+                    <p class="text-funeral-tan italic">Mintirho ya vula vula</p>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-funeral-tan transition-colors"><i class="fas fa-home mr-2"></i>Home</a>
+                <a href="index.html#plans" class="hover:text-funeral-tan transition-colors"><i class="fas fa-clipboard-list mr-2"></i>Plans</a>
+                <a href="index.html#services" class="hover:text-funeral-tan transition-colors"><i class="fas fa-hands-helping mr-2"></i>Services</a>
+                <a href="index.html#tombstones" class="hover:text-funeral-tan transition-colors"><i class="fas fa-monument mr-2"></i>Tombstones</a>
+                <a href="index.html#branches" class="hover:text-funeral-tan transition-colors"><i class="fas fa-map-marker-alt mr-2"></i>Branches</a>
+                <a href="contact.html" class="hover:text-funeral-tan transition-colors"><i class="fas fa-phone mr-2"></i>Contact</a>
+                <a href="#about" class="text-funeral-tan"><i class="fas fa-info-circle mr-2"></i>About</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-white hover:text-funeral-tan transition-colors">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- =========================================================== -->
+<!-- MOBILE SIDEBAR  (100 % identical to index.html)           -->
+<!-- =========================================================== -->
+<div id="mobileSidebar" class="fixed inset-0 z-50 hidden">
+    <div class="fixed inset-0 bg-black bg-opacity-50" onclick="closeMobileSidebar()"></div>
+    <div id="sidebarContent" class="fixed right-0 top-0 h-full w-80 bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-xl font-bold">Menu</h2>
+                <button onclick="closeMobileSidebar()" class="text-white hover:text-funeral-tan">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <nav class="space-y-4">
+                <a href="index.html" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-home mr-3 text-funeral-tan"></i><span>Home</span>
+                </a>
+                <a href="index.html#plans" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-clipboard-list mr-3 text-funeral-tan"></i><span>Funeral Plans</span>
+                </a>
+                <a href="index.html#services" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-hands-helping mr-3 text-funeral-tan"></i><span>Our Services</span>
+                </a>
+                <a href="index.html#tombstones" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-monument mr-3 text-funeral-tan"></i><span>Tombstones</span>
+                </a>
+                <a href="index.html#branches" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-map-marker-alt mr-3 text-funeral-tan"></i><span>Our Branches</span>
+                </a>
+                <a href="contact.html" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-phone mr-3 text-funeral-tan"></i><span>Contact Us</span>
+                </a>
+                <a href="#about" onclick="closeMobileSidebar()" class="flex items-center py-3 px-4 rounded-lg bg-gray-700">
+                    <i class="fas fa-info-circle mr-3 text-funeral-tan"></i><span>About Us</span>
+                </a>
+            </nav>
+            <div class="mt-8 pt-8 border-t border-gray-600">
+                <div class="space-y-3">
+                    <a href="tel:0835937570" class="flex items-center text-green-400 hover:text-green-300">
+                        <i class="fas fa-phone mr-3"></i><span>083 593 7570</span>
+                    </a>
+                    <a href="tel:0603452464" class="flex items-center text-red-400 hover:text-red-300">
+                        <i class="fas fa-exclamation-triangle mr-3"></i><span>Emergency: 060 345 2464</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================== -->
+<!-- HERO / INTRO                                              -->
+<!-- =========================================================== -->
+<section id="about" class="relative bg-gradient-to-br from-funeral-beige to-funeral-tan py-20">
+    <div class="container mx-auto px-4 text-center">
+        <div class="fade-in">
+            <h1 class="text-5xl md:text-6xl font-bold text-black mb-6">About Us</h1>
+            <p class="text-xl text-funeral-brown max-w-3xl mx-auto">
+                Mhelembe Funerals has been serving families across Limpopo with dignity, respect and compassion for many years.
+                “Mintirho ya vula vula” – we are here for you in your time of need.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================== -->
+<!-- MISSION & VISION                                          -->
+<!-- =========================================================== -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-5xl grid md:grid-cols-2 gap-10 items-center">
+        <div class="slide-in-left">
+            <h2 class="text-3xl font-bold text-funeral-brown mb-4"><i class="fas fa-bullseye mr-3"></i>Our Mission</h2>
+            <p class="text-funeral-gray leading-relaxed">
+                To provide affordable, dignified and professional funeral services that honour the lives of loved ones while
+                offering compassionate support to grieving families across Limpopo and beyond.
+            </p>
+        </div>
+        <div class="slide-in-right">
+            <h2 class="text-3xl font-bold text-funeral-brown mb-4"><i class="fas fa-eye mr-3"></i>Our Vision</h2>
+            <p class="text-funeral-gray leading-relaxed">
+                To be the most trusted funeral service provider in the region, recognised for excellence, integrity and
+                unwavering commitment to every family we serve.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================== -->
+<!-- COMPANY STORY + BANKING DETAILS                           -->
+<!-- =========================================================== -->
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <div class="bg-white rounded-xl shadow-lg p-8 fade-in">
+            <h2 class="text-3xl font-bold text-black mb-6"><i class="fas fa-building mr-3 text-funeral-brown"></i>Company Information</h2>
+            <p class="text-funeral-gray leading-relaxed mb-8">
+                Founded on the principles of respect, dignity and affordability, Mhelembe Funerals offers complete funeral
+                solutions – from pre-planning and 24-hour emergency response to premium tombstones and grocery provision.
+                Our four conveniently located branches ensure that professional help is never far away.
+            </p>
+
+            <div class="border-t border-funeral-tan pt-8">
+                <h3 class="text-2xl font-bold text-funeral-brown mb-4"><i class="fas fa-university mr-3"></i>Banking Details</h3>
+                <p class="text-funeral-gray mb-2">Direct deposits can be made to:</p>
+                <ul class="list-disc list-inside text-funeral-gray space-y-1">
+                    <li><strong>Bank:</strong> First National Bank (FNB)</li>
+                    <li><strong>Account Number:</strong> <span class="font-mono text-black">629 0971 1659</span></li>
+                    <li><strong>Branch Code:</strong> 250-655 (Universal branch code)</li>
+                    <li><strong>Account Type:</strong> Cheque / Current</li>
+                </ul>
+                <p class="text-sm text-funeral-gray mt-4">
+                    Please use your full name or policy number as the reference and e-mail the proof of payment to
+                    <a href="mailto:rvukeya@gmail.com" class="underline hover:text-funeral-brown">rvukeya@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================== -->
+<!-- GALLERY  (same 8 images used in index.html#gallery)       -->
+<!-- =========================================================== -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-black mb-4 fade-in"><i class="fas fa-images mr-3"></i>Our Work Gallery</h2>
+        <p class="text-center text-funeral-gray mb-12 fade-in">A glimpse into the professional services we deliver every day.</p>
+        <div class="grid md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+            <!-- 8 gallery items (same file names as index.html) -->
+            <div class="gallery-item scale-in"><img src="images/gallery1.jpg" alt="Funeral Service" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src='';this.alt='Image failed to load';this.style.display='none';"></div>
+            <div class="gallery-item scale-in"><img src="images/gallery2.jpg" alt="Memorial Service" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src='';this.alt='Image failed to load';this.style.display='none';"></div>
+            <div class="gallery-item scale-in"><img src="images/gallery3.jpg" alt="Funeral Arrangement" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src='';this.alt='Image failed to load';this.style.display='none';"></div>
+            <div class="gallery-item scale-in"><img src="images/gallery4.jpg" alt="Tombstone Installation" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src='';this.alt='Image failed to load';this.style.display='none';"></div>
+            <div class="gallery-item scale-in"><img src="images/gallery5.jpg" alt="Casket Display" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src='';this.alt='Image failed to load';this.style.display='none';"></div>
+            <div class="gallery-item scale-in"><img src="images/gallery6.jpg" alt="Memorial Garden" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src='';this.alt='Image failed to load';this.style.display='none';"></div>
+            <div class="gallery-item scale-in"><img src="images/gallery7.jpg" alt="Venue Setup" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src='';this.alt='Image failed to load';this.style.display='none';"></div>
+            <div class="gallery-item scale-in"><img src="images/gallery8.jpg" alt="Family Support" class="w-full h-48 object-cover rounded-lg shadow-lg" onerror="this.src='';this.alt='Image failed to load';this.style.display='none';"></div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================== -->
+<!-- FOOTER  (100 % identical to index.html)                   -->
+<!-- =========================================================== -->
+<footer class="bg-gray-900 text-white">
+    <div class="container mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="images/logo.png" alt="Mhelembe Funerals" class="h-16 md:h-20 w-auto">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Mhelembe Funerals</h3>
+                        <p class="text-funeral-tan italic">Mintirho ya vula vula</p>
+                    </div>
+                </div>
+                <p class="text-gray-300 text-sm mb-5">Serving families with dignity, respect, and compassion in their time of need. Professional funeral services across multiple locations.</p>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/p/Mhelembe-Funerals-100067654508546/" class="text-gray-400 hover:text-funeral-tan transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="https://www.tiktok.com/discover/mhelembe-funeral-services" class="text-gray-400 hover:text-funeral-tan transition"><i class="fab fa-tiktok text-xl"></i></a>
+                    <a href="https://wa.me/27767591149" class="text-gray-400 hover:text-funeral-tan transition"><i class="fab fa-whatsapp text-xl"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-funeral-tan">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>Home</a></li>
+                    <li><a href="index.html#plans" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>Funeral Plans</a></li>
+                    <li><a href="index.html#services" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>Our Services</a></li>
+                    <li><a href="index.html#tombstones" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>Tombstones</a></li>
+                    <li><a href="#about" class="text-gray-300 hover:text-white transition-colors"><i class="fas fa-chevron-right mr-2 text-xs"></i>About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-funeral-tan">Contact Info</h4>
+                <ul class="space-y-3">
+                    <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-funeral-tan"></i><span class="text-gray-300">Main: <a href="tel:0835937570" class="hover:text-white">083 593 7570</a></span></li>
+                    <li class="flex items-center"><i class="fas fa-exclamation-triangle mr-3 text-red-400"></i><span class="text-gray-300">Emergency: <a href="tel:0603452464" class="hover:text-white">060 345 2464</a></span></li>
+                    <li class="flex items-center"><i class="fas fa-envelope mr-3 text-funeral-tan"></i><span class="text-gray-300"><a href="mailto:rvukeya@gmail.com" class="hover:text-white">rvukeya@gmail.com</a></span></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-funeral-tan">Office Hours</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li><i class="fas fa-clock mr-2 text-funeral-tan"></i>Mon – Fri: 8:00 AM – 5:00 PM</li>
+                    <li><i class="fas fa-clock mr-2 text-funeral-tan"></i>Saturday: 8:00 AM – 2:00 PM</li>
+                    <li><i class="fas fa-clock mr-2 text-funeral-tan"></i>Sunday: Emergency Only</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2024 Mhelembe Funerals. All rights reserved.</p>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- =========================================================== -->
+<!-- JAVASCRIPT  (mobile menu + scroll-anim)                   -->
+<!-- =========================================================== -->
+<script>
+/* ----------  animations  ---------- */
+function isElementInViewport(el){
+  const rect=el.getBoundingClientRect();
+  return rect.top>=0&&rect.left>=0&&rect.bottom<=(window.innerHeight||document.documentElement.clientHeight)&&rect.right<=(window.innerWidth||document.documentElement.clientWidth);
+}
+function handleScrollAnimations(){
+  document.querySelectorAll('.fade-in,.scale-in').forEach(el=>{
+    if(isElementInViewport(el)) el.classList.add('visible');
+  });
+}
+/* ----------  mobile menu  ---------- */
+function openMobileSidebar(){
+  const sb=document.getElementById('mobileSidebar');
+  const sbc=document.getElementById('sidebarContent');
+  sb.classList.remove('hidden');
+  setTimeout(()=>sbc.classList.remove('translate-x-full'),10);
+}
+function closeMobileSidebar(){
+  const sb=document.getElementById('mobileSidebar');
+  const sbc=document.getElementById('sidebarContent');
+  sbc.classList.add('translate-x-full');
+  setTimeout(()=>sb.classList.add('hidden'),300);
+}
+/* ----------  init  ---------- */
+document.addEventListener('DOMContentLoaded',()=>{
+  handleScrollAnimations();
+  window.addEventListener('scroll',handleScrollAnimations);
+  document.getElementById('mobileMenuBtn').addEventListener('click',openMobileSidebar);
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      const t=document.querySelector(this.getAttribute('href'));
+      if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+});
+</script>
+</body>
+</html>
